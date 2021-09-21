@@ -14,14 +14,17 @@ namespace StrategyPattern
             Navigator navigator = new Navigator(action);
             navigator.ExecuteAction();
             navigator.PrintInformation();
+
             action = new Searching();
             navigator = new Navigator(action);
             navigator.ExecuteAction();
             navigator.PrintInformation();
+
             action = new Routing(new PublicTransporteRoute());
             navigator = new Navigator(action);
             navigator.ExecuteAction();
             navigator.PrintInformation();
+
             action = new Routing(new LandmarkRoute());
             navigator = new Navigator(action);
             navigator.ExecuteAction();
