@@ -19,7 +19,6 @@ namespace Employee_time_tracking_system
             }
         }
 
-
         protected override void ShowSession()
         {
 

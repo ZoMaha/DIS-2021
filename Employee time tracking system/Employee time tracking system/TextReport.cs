@@ -18,7 +18,5 @@ namespace Employee_time_tracking_system
             reportInformation = "Допустим, это отчет";
             return "Отчет выполнен";
         }
-
-
     }
 }
