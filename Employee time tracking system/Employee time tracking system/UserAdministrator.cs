@@ -8,9 +8,17 @@ namespace Employee_time_tracking_system
 {
     class UserAdministrator: User
     {
-        
+
         UserAdministrator() { }
-        static Lazy<UserAdministrator> user = new Lazy<UserAdministrator>(() => new UserAdministrator());
+        static Lazy<UserAdministrator> objectUser = new Lazy<UserAdministrator>(() => new UserAdministrator());
+        public static UserAdministrator ObjectUser
+        {
+            get
+            {
+                return objectUser.Value;
+            }
+        }
+
 
         protected override void ShowSession()
         {
